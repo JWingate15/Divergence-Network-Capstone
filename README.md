@@ -1,4 +1,4 @@
-# Divergence-Network-Capstone
+### Divergence-Network-Capstone
 Creating a small business network in GNS3
 <header>
 **bold text** Project Summary
