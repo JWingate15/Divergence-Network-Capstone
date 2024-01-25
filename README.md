@@ -1,5 +1,5 @@
 ### Divergence-Network-Capstone
-Creating a small business network in GNS3
+*Creating a small business network in GNS3*
 
 **Project Summary** 
 
