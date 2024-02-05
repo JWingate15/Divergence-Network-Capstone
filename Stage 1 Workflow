@@ -1,0 +1,4 @@
+###Stage 1 Overview
+
+The overall goal of stage 1 was to configure the LAN network on the firewall through the CLI over the console interface, add a Windows10 workstation to the LAN network, connect to the firewall GUI from the Windows 10 workstation, and complete the LAN network setup through the firewall GUI. 
+
