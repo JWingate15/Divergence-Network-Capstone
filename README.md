@@ -11,7 +11,5 @@ Starting Network Topology
 
 ![Stage 0 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/assets/157624174/e4590802-63fd-48c4-995f-ab69ac2b0b6a)
 
-<li class="stage1workflow__menu-item">
-          <a href="[xxx.github.io/stage1workflow.html](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%201%20Workflow)https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%201%20Workflow">Stage 1 Workflow</a>
-        </li>
+![Stage 1 Workflow](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%201%20Workflow)https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%201%20Workflow">
 
