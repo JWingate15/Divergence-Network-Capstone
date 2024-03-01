@@ -4,7 +4,6 @@ During stage 1, the "client" requested for our team to add a local area network 
 
 **LAN Configuration**
 The client requested LAN was configured through the command line interface (CLI) of the FortiNet firewall console. The LAN was configured utilizing the following commands:
-
 conf sys int 
    edit port2
       set allowaccess ping http https ssh
@@ -13,7 +12,6 @@ conf sys int
 **DHCP Configuration**
 Dynamic host configuration protocol (DHCP) is a network management protocol used on Internet Protocol networks for automatically assigning IP addresses to devices connected to the network using a client–server architecture.
 The DHCP server was configured utilizing the following commands:
-
 conf sys dhcp server 
     edit 1
         set default-gateway 10.XXX.X.X 
@@ -34,7 +32,6 @@ gateway: 10.XXX.X.X
 DHCP server: 10.XXX.X.X
 
 We then tested network connectivity by pinging LAN, WAN, and DNS with the following commands:
-
 LAN - 10.XXX.X.X 
 WAN - 8.8.8.8 
 DNS - google.com
@@ -42,7 +39,7 @@ DNS - google.com
 **Complete Network Setup through firewall graphical user interface (GUI)**
 During this step, we accomplished the following tasks: 1) we backed up the firewall config, 2) configured network interfaces (DMZ, guest, LAN, & WAN), 3) enabled DNS, 4) configured the firewall system DNS, 5) configured DNS for network interfaces (DMZ, guest, and LAN), 6) created service objects for LAN & DMZ services, 7) configured firewall rules (LAN-to-WAN policy, DMZ-to-WAN policy, LAN-to-DMZ policy, DMZ-to-LAN policy, & WAN-to-DMZ policy), and 8) backed up the firewall configuration an additional time. 
 
-2) *Network interfaces were configured as the following utilizing the following commands:*
+2) ***Network interfaces were configured as the following utilizing the following commands:***
 
 **port1 WAN**
  edit port1
@@ -86,7 +83,11 @@ edit port4
           administrative access = ping
       #APPLY-THE-CHANGES
 
-3) <ins>DNS was enabled via the following:</ins> 
+3) *DNS was enabled via the following:*
+
+Enable DNS under: System > Feature Visibility
+dns database = enabled
+  #APPLY-THE-CHANGES
 
 
 
