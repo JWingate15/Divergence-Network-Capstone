@@ -114,19 +114,23 @@ During this step, we accomplished the following tasks: 1) we backed up the firew
           administrative access = ping
       #APPLY-THE-CHANGES
 
-3) *DNS was enabled via the following:*
+3) ***DNS was enabled via the following:***
+   
 Enable DNS under: System > Feature Visibility
-dns database = enabled
-  #APPLY-THE-CHANGES
 
-4) *Configure the firewall system DNS*
+      dns database = enabled
+        #APPLY-THE-CHANGES
+
+5) *Configure the firewall system DNS*
+   
 Configure DNS settings under: Network > DNS
-dns servers = specify
-  primary dns server = 8.8.8.8
-  secondary dns server = 1.1.1.1
-  #APPLY-THE-CHANGES
 
-5) *Configure Network DNS*
+      dns servers = specify
+        primary dns server = 8.8.8.8
+        secondary dns server = 1.1.1.1
+        #APPLY-THE-CHANGES
+
+6) *Configure Network DNS*
 
 
 
