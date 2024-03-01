@@ -42,7 +42,7 @@ DNS - google.com
 **Complete Network Setup through firewall graphical user interface (GUI)**
 During this step, we accomplished the following tasks: 1) we backed up the firewall config, 2) configured network interfaces (DMZ, guest, LAN, & WAN), 3) enabled DNS, 4) configured the firewall system DNS, 5) configured DNS for network interfaces (DMZ, guest, and LAN), 6) created service objects for LAN & DMZ services, 7) configured firewall rules (LAN-to-WAN policy, DMZ-to-WAN policy, LAN-to-DMZ policy, DMZ-to-LAN policy, & WAN-to-DMZ policy), and 8) backed up the firewall configuration an additional time. 
 
-2) <ins> Network interfaces were configured as the following utilizing the following commands </ins>:
+2) *Network interfaces were configured as the following utilizing the following commands:*
 
 **port1 WAN**
  edit port1
