@@ -20,7 +20,7 @@ Dynamic host configuration protocol (DHCP) is a network management protocol used
 
 The DHCP server was configured utilizing the following commands:
 
-conf sys dhcp server 
+      conf sys dhcp server 
     
         edit 1
        
@@ -63,7 +63,7 @@ DNS - google.com
 **Complete Network Setup through firewall graphical user interface (GUI)**
 During this step, we accomplished the following tasks: 1) we backed up the firewall config, 2) configured network interfaces (DMZ, guest, LAN, & WAN), 3) enabled DNS, 4) configured the firewall system DNS, 5) configured DNS for network interfaces (DMZ, guest, and LAN), 6) created service objects for LAN & DMZ services, 7) configured firewall rules (LAN-to-WAN policy, DMZ-to-WAN policy, LAN-to-DMZ policy, DMZ-to-LAN policy, & WAN-to-DMZ policy), and 8) backed up the firewall configuration an additional time. 
 
-2)***Network interfaces were configured as the following utilizing the following commands:***
+2) ***Network interfaces were configured as the following utilizing the following commands:***
 
 **port1 WAN**
 
@@ -121,7 +121,7 @@ Enable DNS under: System > Feature Visibility
       dns database = enabled
         #APPLY-THE-CHANGES
 
-5) *Configure the firewall system DNS*
+4) ***Configure the firewall system DNS***
    
 Configure DNS settings under: Network > DNS
 
@@ -130,7 +130,110 @@ Configure DNS settings under: Network > DNS
         secondary dns server = 1.1.1.1
         #APPLY-THE-CHANGES
 
-6) *Configure Network DNS*
+5) ***Configure Network DNS***
+
+Configure Network DNS settings under: Network > DNS Servers
+
+**LAN DNS**
+
+      Create New
+        interface = LAN(port2)
+        mode = recursive
+        #APPLY-THE-CHANGES
+
+**Guest DNS**
+
+      Create New
+        interface = GUEST(port3)
+        mode = recursive
+        #APPLY-THE-CHANGES
+
+**DMZ DNS**
+
+      Create New
+        interface = DMZ(port4)
+        mode = recursive
+        #APPLY-THE-CHANGES
+
+6) ***Create Service Objects***
+
+Configure Service Objects under: Policy & Objects > Services
+
+**LAN services**
+
+      Create New > Service Group
+        name = LAN-services-group
+        members = ALL_ICMP, NTP, RDP, SSH, Web Access, Windows AD
+
+**DMZ services**
+
+      Create New > Service Group
+        name = DMZ-services-group
+        members = ALL_ICMP, FTP, RDP, SSH, Web Access
+
+7) ***Create firewall rules***
+
+Configure firewall rules under: Policy & Objects > IPv4 Policy
+
+**LAN-to-WAN policy**
+
+      Create New
+        name = LAN-to-WAN
+        incoming interface = LAN
+        outgoing interface = WAN
+        source = port2 address
+        destination = all
+        service = all
+        NAT = enabled
+        #APPLY-THE-CHANGES
+
+**DMZ-to-WAN policy**
+
+      Create New
+        name = DMZ-to-WAN
+        incoming interface = DMZ
+        outgoing interface = WAN
+        source = port4 address
+        destination = all
+        service = all
+        NAT = enabled
+        #APPLY-THE-CHANGES
+
+**LAN-to-DMZ policy**
+
+      Create New
+        name = LAN-to-DMZ
+        incoming interface = LAN
+        outgoing interface = DMZ
+        source = port2 address
+        destination = port4 address
+        service = DMZ-services-group
+        NAT = disabled
+        #APPLY-THE-CHANGES
+
+**DMZ-to-LAN policy**
+
+      Create New
+        name = DMZ-to-LAN
+        incoming interface = DMZ
+        outgoing interface = LAN
+        source = port4 address
+        destination = port2 address
+        service = LAN-services-group
+        NAT = disabled
+        #APPLY-THE-CHANGES
+
+**WAN-to-DMZ policy**
+
+      Create New
+        name = WAN-to-DMZ
+        incoming interface = WAN
+        outgoing interface = DMZ
+        source = all
+        destination = port4 address
+        service = DMZ-services-group
+        NAT = disabled
+        #APPLY-THE-CHANGES
 
 
 
