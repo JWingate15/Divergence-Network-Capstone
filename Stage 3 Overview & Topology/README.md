@@ -55,7 +55,7 @@ We created a test webpage on IIS by completing the following steps:
 
 **Stage 3 Ending Topology**
 
-![Stage 3 Topology[(https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%203%20Overview%20%26%20Topology/Stage%203%20Topology.drawio.png)
+![Stage 3 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%203%20Overview%20%26%20Topology/Stage%203%20Topology.drawio.png)
 
 
 
