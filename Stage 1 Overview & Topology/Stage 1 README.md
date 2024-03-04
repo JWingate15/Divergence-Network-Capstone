@@ -1,4 +1,4 @@
-### Stage 1 Overview & Topology
+# **Stage 1 Overview & Topology**
 
 During stage 1, the "client" requested for our team to add a local area network (LAN),a demilitarized zone (DMZ), and a Win10 workstation to their existing network. These networks were built utilizing a FortiNet firewall. After the completion of Stage 1, we added a FortiNet firewall, two Ethernet switches (LAN and DMZ), and a Wind10 workstation to the lab space.
 
