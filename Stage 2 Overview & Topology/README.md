@@ -1,4 +1,4 @@
-**Stage 2 Overview and Topology**
+# **Stage 2 Overview and Topology**
 
 During this stage, we built a Windows domain for the client's small business environment by conducting the following: 1) preparing a Win2012r2 server for Active Directory Domain services role, 2) installing the Active Directory Domain Services server role, 3) creating new Active Directory user accounts, 4) joining Win10 to widgets.localdomain domain, and 5) setting the desktop background on Win10 with group policy from the domain controller (dc). 
 
