@@ -235,5 +235,12 @@ Configure firewall rules under: Policy & Objects > IPv4 Policy
         NAT = disabled
         #APPLY-THE-CHANGES
 
+**Stage 1 Starting Topology**
+
+![Stage 0 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/assets/157624174/e4590802-63fd-48c4-995f-ab69ac2b0b6a)
+
+**Stage 1 Ending Topology**
+
+![Stage 1 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%201%20Overview%20%26%20Topology/Stage%201%20Topology.drawio.png)
 
 
