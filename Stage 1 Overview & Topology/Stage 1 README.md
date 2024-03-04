@@ -63,7 +63,7 @@ DNS - google.com
 **Complete Network Setup through firewall graphical user interface (GUI)**
 During this step, we accomplished the following tasks: 1) we backed up the firewall config, 2) configured network interfaces (DMZ, guest, LAN, & WAN), 3) enabled DNS, 4) configured the firewall system DNS, 5) configured DNS for network interfaces (DMZ, guest, and LAN), 6) created service objects for LAN & DMZ services, 7) configured firewall rules (LAN-to-WAN policy, DMZ-to-WAN policy, LAN-to-DMZ policy, DMZ-to-LAN policy, & WAN-to-DMZ policy), and 8) backed up the firewall configuration an additional time. 
 
-2) ***Network interfaces were configured as the following utilizing the following commands:***
+***2) Network interfaces were configured as the following utilizing the following commands:***
 
 **port1 WAN**
 
@@ -114,14 +114,14 @@ During this step, we accomplished the following tasks: 1) we backed up the firew
           administrative access = ping
       #APPLY-THE-CHANGES
 
-3) ***DNS was enabled via the following:***
+***3) DNS was enabled via the following:***
    
 Enable DNS under: System > Feature Visibility
 
       dns database = enabled
         #APPLY-THE-CHANGES
 
-4) ***Configure the firewall system DNS***
+***4) Configure the firewall system DNS***
    
 Configure DNS settings under: Network > DNS
 
@@ -130,7 +130,7 @@ Configure DNS settings under: Network > DNS
         secondary dns server = 1.1.1.1
         #APPLY-THE-CHANGES
 
-5) ***Configure Network DNS***
+***5) Configure Network DNS***
 
 Configure Network DNS settings under: Network > DNS Servers
 
@@ -155,7 +155,7 @@ Configure Network DNS settings under: Network > DNS Servers
         mode = recursive
         #APPLY-THE-CHANGES
 
-6) ***Create Service Objects***
+***6) Create Service Objects***
 
 Configure Service Objects under: Policy & Objects > Services
 
@@ -171,7 +171,7 @@ Configure Service Objects under: Policy & Objects > Services
         name = DMZ-services-group
         members = ALL_ICMP, FTP, RDP, SSH, Web Access
 
-7) ***Create firewall rules***
+***7) Create firewall rules***
 
 Configure firewall rules under: Policy & Objects > IPv4 Policy
 
