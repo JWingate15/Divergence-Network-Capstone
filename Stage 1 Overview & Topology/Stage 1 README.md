@@ -3,6 +3,7 @@
 During stage 1, the "client" requested for our team to add a local area network (LAN),a demilitarized zone (DMZ), and a Win10 workstation to their existing network. These networks were built utilizing a FortiNet firewall. After the completion of Stage 1, we added a FortiNet firewall, two Ethernet switches (LAN and DMZ), and a Wind10 workstation to the lab space.
 
 **LAN Configuration**
+
 The client requested LAN was configured through the command line interface (CLI) of the FortiNet firewall console. 
 The LAN was configured utilizing the following commands:
 
@@ -16,6 +17,7 @@ The LAN was configured utilizing the following commands:
       end
 
 **DHCP Configuration**
+
 Dynamic host configuration protocol (DHCP) is a network management protocol used on Internet Protocol networks for automatically assigning IP addresses to devices connected to the network using a client–server architecture.
 
 The DHCP server was configured utilizing the following commands:
@@ -43,24 +45,25 @@ The DHCP server was configured utilizing the following commands:
          end
 
 **Windows10 Workstation Configuration**
+
 Next, we validated the Win10 workstation had leased a DHCP address from the LAN network with the following commands:
 
-valid IP range: 10.XXX.X.[XXX-XXX]/XX 
+      valid IP range: 10.XXX.X.[XXX-XXX]/XX 
 
-gateway: 10.XXX.X.X
+      gateway: 10.XXX.X.X
 
-DHCP server: 10.XXX.X.X
+      DHCP server: 10.XXX.X.X
 
 *We then tested network connectivity by pinging LAN, WAN, and DNS with the following commands:*
 
-LAN - 10.XXX.X.X 
+      LAN - 10.XXX.X.X 
 
-WAN - 8.8.8.8 
+      WAN - 8.8.8.8 
 
-DNS - google.com
-
+      DNS - google.com
 
 **Complete Network Setup through firewall graphical user interface (GUI)**
+
 During this step, we accomplished the following tasks: 1) we backed up the firewall config, 2) configured network interfaces (DMZ, guest, LAN, & WAN), 3) enabled DNS, 4) configured the firewall system DNS, 5) configured DNS for network interfaces (DMZ, guest, and LAN), 6) created service objects for LAN & DMZ services, 7) configured firewall rules (LAN-to-WAN policy, DMZ-to-WAN policy, LAN-to-DMZ policy, DMZ-to-LAN policy, & WAN-to-DMZ policy), and 8) backed up the firewall configuration an additional time. 
 
 ***2) Network interfaces were configured as the following utilizing the following commands:***
