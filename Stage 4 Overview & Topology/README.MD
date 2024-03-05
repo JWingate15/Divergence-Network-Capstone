@@ -49,7 +49,7 @@ During Stage 4, we 1) added and configured an Unbuntu Linux + Apache + MySQL + P
 
     nano /etc/apache2/sites-available/dokuwiki.conf
 
-**add the following, keep the tabbed spacing**
+*Add the following, keep the tabbed spacing*
 
     <VirtualHost *:80>
             ServerName www.widgets.localdomain
