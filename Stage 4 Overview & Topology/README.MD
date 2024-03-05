@@ -85,8 +85,11 @@ Save and exit
 *Verify access to the installer*
 
 ***Create a host (A) record in DNS on the DC***
-Log onto the DC.
+
+Log onto the DC
+
 Open DNS Manager
+
 Under the Forward Lookup Zones, add a new host (A) record to the widgets.localdomain domain
 
     name = www
