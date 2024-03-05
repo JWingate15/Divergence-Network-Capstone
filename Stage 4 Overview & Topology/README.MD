@@ -177,8 +177,10 @@ Go to Policy & Objects > Virtual IPs > Create New Virtual IP
     map to port = 80
 
 **Stage 4 Starting Topology**
+
 ![Stage 3 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%203%20Overview%20%26%20Topology/Stage%203%20Topology.drawio.png)
 
 **Stage 4 Ending Topology**
+
 ![Stage 4 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%204%20Overview%20%26%20Topology/Stage%204%20Topology.drawio.png)
 
