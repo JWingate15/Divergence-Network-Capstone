@@ -21,5 +21,6 @@ We followed the following guide : https://learn.microsoft.com/en-us/archive/tech
 **Stage 5 Starting Topology**
 ![Stage 4 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%204%20Overview%20%26%20Topology/Stage%204%20Topology.drawio.png)
 
+
 **Stage 5 Ending Topology**
 ![Stage 5 Topology](https://github.com/JWingate15/Divergence-Network-Capstone/blob/main/Stage%205%20Overview%20%26%20Topology/Stage%205%20Topology.drawio.png)
